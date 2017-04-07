@@ -37,6 +37,11 @@ if confirmed; then
   require_brew zsh
 fi
 
+yes_or_no "would you like to install reattach-to-user-namespace?"
+if confirmed; then
+  require_brew reattach-to-user-namespace
+fi
+
 yes_or_no "would you like to install fontconfig?"
 if confirmed; then
   require_brew fontconfig
