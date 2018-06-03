@@ -57,6 +57,12 @@ running "select the atom packages you would like to install"
 source installs/.apm_installs
 ok "feel free to add more atom packages! "
 
+# Configuring VIM
+running "Installing vim plugins"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln ~/.dotfiles/.vimrc ~/.vimrc
+vim +PluginInstall +qall
+
 # hard link .zshrc
 running "linking your .zshrc!"
 ln ~/.dotfiles/.zshrc ~/.zshrc
