@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-COMPUTERNAME="YOUR NAME's MBP"
+COMPUTERNAME="Zachary's Macbook Pro"
 HOSTNAME='mbp'
 LOCALHOSTNAME='mbp'
 

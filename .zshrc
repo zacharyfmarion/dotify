@@ -14,7 +14,7 @@ for file in ~/Developer/.dotfiles/zsh_files/.{aliases,functions}; do
 done;
 
 ##### PLUGINS #####
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 ##### USER CONFIG #####
-export PATH="YOUR PATH"
+# export PATH="YOUR PATH"
