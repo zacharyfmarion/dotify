@@ -38,26 +38,15 @@ require_brew rvm
 running "installing zsh"
 require_brew zsh
 
-yes_or_no "would you like to install fontconfig?"
-if confirmed; then
-  require_brew fontconfig
-fi
-
 ########## APPS ###########
 running "installing brew cask"
 brew tap caskroom/cask
 
 #### DEVELOPMENT ####
-yes_or_no "would you like to install iterm?"
+yes_or_no "would you like to install iterm2?"
 if confirmed; then
   cask_install iterm2
 fi
-
-yes_or_no "would you like to install atom?"
-if confirmed; then
-  cask_install atom
-fi
-
 
 yes_or_no "would you like to install vscode?"
 if confirmed; then
@@ -65,19 +54,9 @@ if confirmed; then
 fi
 
 #### MEDIA ####
-yes_or_no "would you like to install vlc?"
-if confirmed; then
-  cask_install vlc
-fi
-
 yes_or_no "would you like to install spotify?"
 if confirmed; then
   cask_install spotify
-fi
-
-yes_or_no "would you like to install transmission?"
-if confirmed; then
-  cask_install transmission
 fi
 
 #### COMMUNICATION ####
