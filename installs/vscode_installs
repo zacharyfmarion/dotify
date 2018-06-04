@@ -6,14 +6,23 @@ function require_vscode() {
   ok
 }
 
-yes_or_no "would you like to install vim?"
-if confirmed; then
-  require_vscode "vscodevim.vim"
-fi
+running "Installing custom css loader"
+require_vscode "be5invis.vscode-custom-css"
 
-yes_or_no "would you like to install flow?"
-if confirmed; then
-  require_vscode "flowtype.flow-for-vscode"
-fi
+running "Installing vim emulation"
+require_vscode "vscodevim.vim"
+
+running "Installing eslint"
+require_vscode "dbaeumer.vscode-eslint"
+
+running "Installing prettier"
+require_vscode "esbenp.prettier-vscode"
+
+running "Installing solarized themes"
+require_vscode "yogipatel.solarized-light-no-bold"
+require_vscode "gerane.theme-solarized-dark"
+
+running "Installing vim language"
+require_vscode "fallenwood.viml"
 
 bot "vscode packages installed successfully"
