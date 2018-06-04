@@ -1,5 +1,4 @@
-#!bin/bash
-
+##### USER CONFIG #####
 alias back="cd .."
 alias home="cd ~"
 

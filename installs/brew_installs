@@ -7,8 +7,7 @@ function require_brew() {
     action "brew install $1"
     brew install $1 $2
     if [[ $? != 0 ]]; then
-      error "failed to install $1! aborting..."
-      exit -1
+      error "failed to install $1!"
     fi
   fi
   ok
@@ -29,6 +28,7 @@ function cask_install() {
 }
 
 ########## BREW PKGS ##########
+
 running "installing python"
 require_brew python
 
@@ -37,11 +37,6 @@ require_brew rvm
 
 running "installing zsh"
 require_brew zsh
-
-yes_or_no "would you like to install reattach-to-user-namespace?"
-if confirmed; then
-  require_brew reattach-to-user-namespace
-fi
 
 yes_or_no "would you like to install fontconfig?"
 if confirmed; then
@@ -61,6 +56,12 @@ fi
 yes_or_no "would you like to install atom?"
 if confirmed; then
   cask_install atom
+fi
+
+
+yes_or_no "would you like to install vscode?"
+if confirmed; then
+  cask_install visual-studio-code
 fi
 
 #### MEDIA ####

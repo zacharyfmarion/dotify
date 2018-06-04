@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function require_vscode() {
+  action "code --install-extension $1"
+  code --install-extension $1
+  ok
+}
+
+yes_or_no "would you like to install vim?"
+if confirmed; then
+  require_vscode "vscodevim.vim"
+fi
+
+yes_or_no "would you like to install flow?"
+if confirmed; then
+  require_vscode "flowtype.flow-for-vscode"
+fi
+
+bot "vscode packages installed successfully"

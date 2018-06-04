@@ -1,3 +1,6 @@
+# Install VSCODE command line tool
+sudo cp /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+
 #! Colors
 ESC_SEQ="\x1b["
 COL_RESET=$ESC_SEQ"39;49;00m"

@@ -23,12 +23,16 @@ Plugin 'scrooloose/syntastic'
 
 " File tree
 Plugin 'scrooloose/nerdtree'
+
 " Autocompletion plugin
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
+
 " Commenter
 Plugin 'scrooloose/nerdcommenter'
+
 " Emmet plugin
 Plugin 'mattn/emmet-vim'
+
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
