@@ -65,35 +65,15 @@ if confirmed; then
   cask_install slack
 fi
 
-yes_or_no "would you like to install nylas-n1?"
-if confirmed; then
-  cask_install nylas-n1
-fi
-
-yes_or_no "would you like to install goofy?"
-if confirmed; then
-  cask_install goofy
-fi
-
 #### MISC ####
 yes_or_no "would you like to install google chrome?"
 if confirmed; then
   cask_install google-chrome
 fi
 
-yes_or_no "would you like to install docker toolbox?"
-if confirmed; then
-  cask_install dockertoolbox
-fi
-
 yes_or_no "would you like to install flux?"
 if confirmed; then
   cask_install flux
-fi
-
-yes_or_no "would you like to install dropbox?"
-if confirmed; then
-  cask_install dropbox
 fi
 
 #### SECURITY ####
